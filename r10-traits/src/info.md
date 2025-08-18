@@ -28,11 +28,11 @@ use aggregator::{NewsArticle, Summary};
         ```rust
             use crate::utils;
         ```
-    - But before you can use this module, it needs to be resolved as a module in the main file.
-    - Thus, the above code will throw an error as unfound module if this is not done.
+   - But before you can use this module, it needs to be resolved as a module in the main file.
+   - Thus, the above code will throw an error as unfound module if this is not done.
 
-    - To resolve this, you need to declare the `utils` module in the main file.
-    - This can be done by adding the following line to the main file:
-      ```rust
-        mod utils;
-      ```
+   - To resolve this, you need to declare the `utils` module in the main file.
+   - This can be done by adding the following line to the main file:
+     ```rust
+      mod utils;
+     ```
