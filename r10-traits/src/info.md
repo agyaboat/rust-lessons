@@ -11,9 +11,9 @@ aggregator = { path = "../aggregator" }
 ```
 
 - After it is added as a dependency, the main crate can use the structs and traits defined in the library crate by importing them.
-```rust
-use aggregator::{NewsArticle, Summary};
-```
+    ```rust
+    use aggregator::{NewsArticle, Summary};
+    ```
    - Realise that before the `summary` method could be called on the `NewsArticle` instance,
    the `Summary` trait has to also be brought into scope.
    - This is because the `summary` method is defined in the `Summary` trait, and the `NewsArticle` struct implements this trait.
