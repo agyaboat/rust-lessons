@@ -1,4 +1,6 @@
 use aggregator::{self, Summary};
+// self added to imply that we are using the `aggregator` crate
+// it can be ommited though, and this will still work
 
 pub fn main(){
     let article = aggregator::NewsArticle {
