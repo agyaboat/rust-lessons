@@ -107,18 +107,18 @@ enum Result<T, E> {
 
 ## Method Definitions
 - When you implement methods for a generic struct, you must also declare the generic(s) after impl.
-- ```rust
-struct Point<T> {
-    x: T,
-    y: T,
-}
-
-impl<T> Point<T> {
-    fn new(x: T, y: T) -> Self {
-        Point { x, y }
+    ```rust
+    struct Point<T> {
+        x: T,
+        y: T,
     }
-}
-```
+
+    impl<T> Point<T> {
+        fn new(x: T, y: T) -> Self {
+            Point { x, y }
+        }
+    }
+    ```
 
 - This tells Rust: "I'm implementing methods for Point that can hold any type T."
 - Works for any Point<T> regardless of whether T is i32, f64, char, etc.
