@@ -36,3 +36,19 @@ aggregator = { path = "../aggregator" }
     ```rust
     mod utils;
     ```
+
+## Use of `aggregator` in `traits.rs`
+- In order to make the code modular and organised, 
+a module called `traits.rs` is created to work on the `Traits` examples.
+- In order to make it part of the project and be included when running the entry file (`main.rs`),
+the `traits` module needs to be declared in the `main` file.
+    ```rust
+    mod traits;
+    ```
+
+- also, the traits module makes use of the `aggregator` crate which has been added as a dependency.
+- Thus, it was imported in the `traits.rs` as:
+    ```rust
+    use crate::aggregator;
+    ```
+- This allows the `traits.rs` file to use the types and traits defined in the `aggregator` crate.
